@@ -58,14 +58,24 @@ public class Producto {
     }
 
     public void setRating(int rating) {
-        if(rating > 0 && rating < 5) {
+        if(rating > 0 && rating <= 5) {
            this.rating = rating;
         }
     }    
+
+    public double getPrecio() {
+        return precio;
+    }
+    
+    
     
 //    public void mostrarDatos() {
 //        System.out.println( toString() );
 //    }
+    
+    public void aumentarPrecio(double porc) {
+        setPrecio( getPrecio() * (1 + (porc / 100)) );
+    }
 
     @Override
     public String toString() {
