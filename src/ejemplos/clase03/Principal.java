@@ -17,7 +17,7 @@ public class Principal {
      */
     public static void main(String[] args) {        
         Domicilio d = new Domicilio("Callao",123,"Balvanera");
-        Tienda t = new Tienda("CaC Insumos", d);
+        Tienda t = new Tienda("CaC Insumos", d);        
                 
         t.agregarProducto( new Producto("a1", "Teclado", 4, 14.3) );
         t.agregarProducto( new Producto("a2", "Mouse", 2, 5.8) );
